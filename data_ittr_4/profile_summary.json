@@ -1,0 +1,1399 @@
+{
+  "shape": {
+    "rows": 15623,
+    "columns": 106
+  },
+  "columns": [
+    {
+      "name": "sofifa_id",
+      "type": "integer",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "range": [
+        2.0,
+        254664.0
+      ]
+    },
+    {
+      "name": "player_url",
+      "type": "text",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "short_name",
+      "type": "text",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "long_name",
+      "type": "text",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "age",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        16.0,
+        45.0
+      ]
+    },
+    {
+      "name": "dob",
+      "type": "datetime",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "height_cm",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        155.0,
+        208.0
+      ]
+    },
+    {
+      "name": "weight_kg",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        50.0,
+        110.0
+      ]
+    },
+    {
+      "name": "nationality",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "England",
+        "Argentina",
+        "Spain"
+      ]
+    },
+    {
+      "name": "club_name",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 1.09,
+      "top_values": [
+        "Arsenal",
+        "Sunderland",
+        "Hannover 96"
+      ]
+    },
+    {
+      "name": "league_name",
+      "type": "categorical",
+      "cardinality": "medium",
+      "null_percentage": 1.09,
+      "top_values": [
+        "Argentina Primera Divisi\u00f3n",
+        "English League Championship",
+        "English League One"
+      ]
+    },
+    {
+      "name": "league_rank",
+      "type": "integer",
+      "cardinality": "low",
+      "null_percentage": 1.09,
+      "range": [
+        1.0,
+        4.0
+      ]
+    },
+    {
+      "name": "overall",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        44.0,
+        94.0
+      ]
+    },
+    {
+      "name": "potential",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        44.0,
+        95.0
+      ]
+    },
+    {
+      "name": "value_eur",
+      "type": "integer",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "range": [
+        0.0,
+        111000000.0
+      ]
+    },
+    {
+      "name": "wage_eur",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        0.0,
+        550000.0
+      ]
+    },
+    {
+      "name": "player_positions",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "CB",
+        "GK",
+        "ST"
+      ]
+    },
+    {
+      "name": "preferred_foot",
+      "type": "categorical",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "top_values": [
+        "Right",
+        "Left"
+      ]
+    },
+    {
+      "name": "international_reputation",
+      "type": "integer",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "weak_foot",
+      "type": "integer",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "skill_moves",
+      "type": "integer",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "work_rate",
+      "type": "categorical",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "top_values": [
+        "Medium/Medium",
+        "High/Medium",
+        "Medium/High"
+      ]
+    },
+    {
+      "name": "body_type",
+      "type": "categorical",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "top_values": [
+        "Normal",
+        "Lean",
+        "Stocky"
+      ]
+    },
+    {
+      "name": "real_face",
+      "type": "boolean",
+      "cardinality": "low",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "release_clause_eur",
+      "type": "empty",
+      "cardinality": "low",
+      "null_percentage": 100.0
+    },
+    {
+      "name": "player_tags",
+      "type": "categorical",
+      "cardinality": "medium",
+      "null_percentage": 91.68,
+      "top_values": [
+        "#Strength",
+        "#Acrobat",
+        "#Speedster"
+      ]
+    },
+    {
+      "name": "team_position",
+      "type": "categorical",
+      "cardinality": "medium",
+      "null_percentage": 1.09,
+      "top_values": [
+        "SUB",
+        "RES",
+        "GK"
+      ]
+    },
+    {
+      "name": "team_jersey_number",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 1.09,
+      "range": [
+        1.0,
+        99.0
+      ]
+    },
+    {
+      "name": "loaned_from",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 93.23,
+      "top_values": [
+        "Atalanta",
+        "Chievo Verona",
+        "Atl\u00e9tico Madrid"
+      ]
+    },
+    {
+      "name": "joined",
+      "type": "datetime",
+      "cardinality": "high",
+      "null_percentage": 7.86
+    },
+    {
+      "name": "contract_valid_until",
+      "type": "integer",
+      "cardinality": "low",
+      "null_percentage": 1.09,
+      "range": [
+        2015.0,
+        2021.0
+      ]
+    },
+    {
+      "name": "nation_position",
+      "type": "categorical",
+      "cardinality": "medium",
+      "null_percentage": 93.5,
+      "top_values": [
+        "SUB",
+        "GK",
+        "RCB"
+      ]
+    },
+    {
+      "name": "nation_jersey_number",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 93.5,
+      "range": [
+        1.0,
+        23.0
+      ]
+    },
+    {
+      "name": "pace",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        21.0,
+        96.0
+      ]
+    },
+    {
+      "name": "shooting",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        14.0,
+        93.0
+      ]
+    },
+    {
+      "name": "passing",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        20.0,
+        93.0
+      ]
+    },
+    {
+      "name": "dribbling",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        22.0,
+        95.0
+      ]
+    },
+    {
+      "name": "defending",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        15.0,
+        90.0
+      ]
+    },
+    {
+      "name": "physic",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 10.87,
+      "range": [
+        27.0,
+        89.0
+      ]
+    },
+    {
+      "name": "gk_diving",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        36.0,
+        88.0
+      ]
+    },
+    {
+      "name": "gk_handling",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        37.0,
+        87.0
+      ]
+    },
+    {
+      "name": "gk_kicking",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        29.0,
+        91.0
+      ]
+    },
+    {
+      "name": "gk_reflexes",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        32.0,
+        90.0
+      ]
+    },
+    {
+      "name": "gk_speed",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        12.0,
+        64.0
+      ]
+    },
+    {
+      "name": "gk_positioning",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 89.13,
+      "range": [
+        37.0,
+        90.0
+      ]
+    },
+    {
+      "name": "player_traits",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 55.1,
+      "top_values": [
+        "Injury Prone",
+        "Speed Dribbler (AI)",
+        "Power Header"
+      ]
+    },
+    {
+      "name": "attacking_crossing",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        5.0,
+        93.0
+      ]
+    },
+    {
+      "name": "attacking_finishing",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        2.0,
+        95.0
+      ]
+    },
+    {
+      "name": "attacking_heading_accuracy",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        5.0,
+        95.0
+      ]
+    },
+    {
+      "name": "attacking_short_passing",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        9.0,
+        93.0
+      ]
+    },
+    {
+      "name": "attacking_volleys",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        92.0
+      ]
+    },
+    {
+      "name": "skill_dribbling",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        4.0,
+        96.0
+      ]
+    },
+    {
+      "name": "skill_curve",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        6.0,
+        94.0
+      ]
+    },
+    {
+      "name": "skill_fk_accuracy",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        4.0,
+        95.0
+      ]
+    },
+    {
+      "name": "skill_long_passing",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        10.0,
+        94.0
+      ]
+    },
+    {
+      "name": "skill_ball_control",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        5.0,
+        96.0
+      ]
+    },
+    {
+      "name": "movement_acceleration",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        11.0,
+        97.0
+      ]
+    },
+    {
+      "name": "movement_sprint_speed",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        11.0,
+        96.0
+      ]
+    },
+    {
+      "name": "movement_agility",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        11.0,
+        96.0
+      ]
+    },
+    {
+      "name": "movement_reactions",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        29.0,
+        92.0
+      ]
+    },
+    {
+      "name": "movement_balance",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        12.0,
+        96.0
+      ]
+    },
+    {
+      "name": "power_shot_power",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        95.0
+      ]
+    },
+    {
+      "name": "power_jumping",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        14.0,
+        97.0
+      ]
+    },
+    {
+      "name": "power_stamina",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        10.0,
+        95.0
+      ]
+    },
+    {
+      "name": "power_strength",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        12.0,
+        98.0
+      ]
+    },
+    {
+      "name": "power_long_shots",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        6.0,
+        93.0
+      ]
+    },
+    {
+      "name": "mentality_aggression",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        9.0,
+        94.0
+      ]
+    },
+    {
+      "name": "mentality_interceptions",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        93.0
+      ]
+    },
+    {
+      "name": "mentality_positioning",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        94.0
+      ]
+    },
+    {
+      "name": "mentality_vision",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        5.0,
+        94.0
+      ]
+    },
+    {
+      "name": "mentality_penalties",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        7.0,
+        96.0
+      ]
+    },
+    {
+      "name": "mentality_composure",
+      "type": "empty",
+      "cardinality": "low",
+      "null_percentage": 100.0
+    },
+    {
+      "name": "defending_marking",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        91.0
+      ]
+    },
+    {
+      "name": "defending_standing_tackle",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        3.0,
+        91.0
+      ]
+    },
+    {
+      "name": "defending_sliding_tackle",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        5.0,
+        95.0
+      ]
+    },
+    {
+      "name": "goalkeeping_diving",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        88.0
+      ]
+    },
+    {
+      "name": "goalkeeping_handling",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        87.0
+      ]
+    },
+    {
+      "name": "goalkeeping_kicking",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        91.0
+      ]
+    },
+    {
+      "name": "goalkeeping_positioning",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        90.0
+      ]
+    },
+    {
+      "name": "goalkeeping_reflexes",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        1.0,
+        90.0
+      ]
+    },
+    {
+      "name": "ls",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "61+0",
+        "59+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "st",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "61+0",
+        "59+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "rs",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "61+0",
+        "59+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "lw",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "61+0",
+        "62+0"
+      ]
+    },
+    {
+      "name": "lf",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "cf",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "rf",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "rw",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "61+0",
+        "62+0"
+      ]
+    },
+    {
+      "name": "lam",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "61+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "cam",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "61+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "ram",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "61+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "lm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "61+0",
+        "64+0",
+        "62+0"
+      ]
+    },
+    {
+      "name": "lcm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "60+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "cm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "60+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "rcm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "60+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "rm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "61+0",
+        "64+0",
+        "62+0"
+      ]
+    },
+    {
+      "name": "lwb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "59+0",
+        "56+0",
+        "57+0"
+      ]
+    },
+    {
+      "name": "ldm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "cdm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "rdm",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "63+0",
+        "62+0",
+        "64+0"
+      ]
+    },
+    {
+      "name": "rwb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "59+0",
+        "56+0",
+        "57+0"
+      ]
+    },
+    {
+      "name": "lb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "62+0",
+        "64+0",
+        "61+0"
+      ]
+    },
+    {
+      "name": "lcb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "65+0",
+        "64+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "cb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "65+0",
+        "64+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "rcb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "65+0",
+        "64+0",
+        "63+0"
+      ]
+    },
+    {
+      "name": "rb",
+      "type": "categorical",
+      "cardinality": "high",
+      "null_percentage": 0.0,
+      "top_values": [
+        "62+0",
+        "64+0",
+        "61+0"
+      ]
+    }
+  ],
+  "sample_rows": [
+    {
+      "sofifa_id": 158023,
+      "player_url": "https://sofifa.com/player/158023/lionel-messi/160002",
+      "short_name": "L. Messi",
+      "long_name": "Lionel Andr\u00e9s Messi Cuccittini",
+      "age": 28,
+      "dob": "1987-06-24",
+      "height_cm": 170,
+      "weight_kg": 72,
+      "nationality": "Argentina",
+      "club_name": "FC Barcelona",
+      "league_name": "Spain Primera Division",
+      "league_rank": 1.0,
+      "overall": 94,
+      "potential": 95,
+      "value_eur": 111000000,
+      "wage_eur": 550000,
+      "player_positions": "RW, CF",
+      "preferred_foot": "Left",
+      "international_reputation": 5,
+      "weak_foot": 4,
+      "skill_moves": 4,
+      "work_rate": "Medium/Low",
+      "body_type": "Messi",
+      "real_face": "Yes",
+      "release_clause_eur": "",
+      "player_tags": "#Speedster, #Dribbler, #FK Specialist, #Acrobat, #Clinical Finisher, #Complete Forward",
+      "team_position": "RW",
+      "team_jersey_number": 10.0,
+      "loaned_from": "",
+      "joined": "2004-07-01",
+      "contract_valid_until": 2018.0,
+      "nation_position": "RW",
+      "nation_jersey_number": 10.0,
+      "pace": 92.0,
+      "shooting": 88.0,
+      "passing": 86.0,
+      "dribbling": 95.0,
+      "defending": 24.0,
+      "physic": 62.0,
+      "gk_diving": "",
+      "gk_handling": "",
+      "gk_kicking": "",
+      "gk_reflexes": "",
+      "gk_speed": "",
+      "gk_positioning": "",
+      "player_traits": "Finesse Shot, Speed Dribbler (AI), One Club Player, Team Player",
+      "attacking_crossing": 80,
+      "attacking_finishing": 93,
+      "attacking_heading_accuracy": 71,
+      "attacking_short_passing": 88,
+      "attacking_volleys": 85,
+      "skill_dribbling": 96,
+      "skill_curve": 89,
+      "skill_fk_accuracy": 90,
+      "skill_long_passing": 79,
+      "skill_ball_control": 96,
+      "movement_acceleration": 95,
+      "movement_sprint_speed": 90,
+      "movement_agility": 92,
+      "movement_reactions": 92,
+      "movement_balance": 95,
+      "power_shot_power": 80,
+      "power_jumping": 68,
+      "power_stamina": 76,
+      "power_strength": 59,
+      "power_long_shots": 88,
+      "mentality_aggression": 48,
+      "mentality_interceptions": 22,
+      "mentality_positioning": 90,
+      "mentality_vision": 90,
+      "mentality_penalties": 74,
+      "mentality_composure": "",
+      "defending_marking": 13,
+      "defending_standing_tackle": 23,
+      "defending_sliding_tackle": 21,
+      "goalkeeping_diving": 6,
+      "goalkeeping_handling": 11,
+      "goalkeeping_kicking": 15,
+      "goalkeeping_positioning": 14,
+      "goalkeeping_reflexes": 8,
+      "ls": "87+3",
+      "st": "87+3",
+      "rs": "87+3",
+      "lw": "91+3",
+      "lf": "91+3",
+      "cf": "91+3",
+      "rf": "91+3",
+      "rw": "91+3",
+      "lam": "91+3",
+      "cam": "91+3",
+      "ram": "91+3",
+      "lm": "90+3",
+      "lcm": "82+3",
+      "cm": "82+3",
+      "rcm": "82+3",
+      "rm": "90+3",
+      "lwb": "62+3",
+      "ldm": "57+3",
+      "cdm": "57+3",
+      "rdm": "57+3",
+      "rwb": "62+3",
+      "lb": "57+3",
+      "lcb": "44+3",
+      "cb": "44+3",
+      "rcb": "44+3",
+      "rb": "57+3"
+    },
+    {
+      "sofifa_id": 20801,
+      "player_url": "https://sofifa.com/player/20801/c-ronaldo-dos-santos-aveiro/160002",
+      "short_name": "Cristiano Ronaldo",
+      "long_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "age": 30,
+      "dob": "1985-02-05",
+      "height_cm": 185,
+      "weight_kg": 80,
+      "nationality": "Portugal",
+      "club_name": "Real Madrid",
+      "league_name": "Spain Primera Division",
+      "league_rank": 1.0,
+      "overall": 93,
+      "potential": 93,
+      "value_eur": 85500000,
+      "wage_eur": 475000,
+      "player_positions": "LW, LM",
+      "preferred_foot": "Right",
+      "international_reputation": 5,
+      "weak_foot": 4,
+      "skill_moves": 5,
+      "work_rate": "High/Low",
+      "body_type": "C. Ronaldo",
+      "real_face": "Yes",
+      "release_clause_eur": "",
+      "player_tags": "#Speedster, #Dribbler, #Distance Shooter, #Acrobat, #Clinical Finisher, #Complete Forward",
+      "team_position": "LM",
+      "team_jersey_number": 7.0,
+      "loaned_from": "",
+      "joined": "2009-07-01",
+      "contract_valid_until": 2018.0,
+      "nation_position": "ST",
+      "nation_jersey_number": 7.0,
+      "pace": 92.0,
+      "shooting": 93.0,
+      "passing": 80.0,
+      "dribbling": 91.0,
+      "defending": 33.0,
+      "physic": 78.0,
+      "gk_diving": "",
+      "gk_handling": "",
+      "gk_kicking": "",
+      "gk_reflexes": "",
+      "gk_speed": "",
+      "gk_positioning": "",
+      "player_traits": "Power Free-Kick, Flair, Long Shot Taker (AI), Speed Dribbler (AI)",
+      "attacking_crossing": 82,
+      "attacking_finishing": 95,
+      "attacking_heading_accuracy": 86,
+      "attacking_short_passing": 81,
+      "attacking_volleys": 87,
+      "skill_dribbling": 93,
+      "skill_curve": 88,
+      "skill_fk_accuracy": 77,
+      "skill_long_passing": 72,
+      "skill_ball_control": 91,
+      "movement_acceleration": 91,
+      "movement_sprint_speed": 93,
+      "movement_agility": 90,
+      "movement_reactions": 92,
+      "movement_balance": 62,
+      "power_shot_power": 94,
+      "power_jumping": 94,
+      "power_stamina": 87,
+      "power_strength": 79,
+      "power_long_shots": 93,
+      "mentality_aggression": 62,
+      "mentality_interceptions": 29,
+      "mentality_positioning": 93,
+      "mentality_vision": 81,
+      "mentality_penalties": 85,
+      "mentality_composure": "",
+      "defending_marking": 22,
+      "defending_standing_tackle": 31,
+      "defending_sliding_tackle": 23,
+      "goalkeeping_diving": 7,
+      "goalkeeping_handling": 11,
+      "goalkeeping_kicking": 15,
+      "goalkeeping_positioning": 14,
+      "goalkeeping_reflexes": 11,
+      "ls": "91+2",
+      "st": "91+2",
+      "rs": "91+2",
+      "lw": "90+3",
+      "lf": "91+2",
+      "cf": "91+2",
+      "rf": "91+2",
+      "rw": "90+3",
+      "lam": "88+3",
+      "cam": "88+3",
+      "ram": "88+3",
+      "lm": "88+3",
+      "lcm": "80+3",
+      "cm": "80+3",
+      "rcm": "80+3",
+      "rm": "88+3",
+      "lwb": "64+3",
+      "ldm": "60+3",
+      "cdm": "60+3",
+      "rdm": "60+3",
+      "rwb": "64+3",
+      "lb": "60+3",
+      "lcb": "52+3",
+      "cb": "52+3",
+      "rcb": "52+3",
+      "rb": "60+3"
+    },
+    {
+      "sofifa_id": 9014,
+      "player_url": "https://sofifa.com/player/9014/arjen-robben/160002",
+      "short_name": "A. Robben",
+      "long_name": "Arjen Robben",
+      "age": 31,
+      "dob": "1984-01-23",
+      "height_cm": 180,
+      "weight_kg": 80,
+      "nationality": "Netherlands",
+      "club_name": "FC Bayern M\u00fcnchen",
+      "league_name": "German 1. Bundesliga",
+      "league_rank": 1.0,
+      "overall": 90,
+      "potential": 90,
+      "value_eur": 56000000,
+      "wage_eur": 250000,
+      "player_positions": "RM, LM, RW",
+      "preferred_foot": "Left",
+      "international_reputation": 5,
+      "weak_foot": 2,
+      "skill_moves": 4,
+      "work_rate": "High/Low",
+      "body_type": "Normal",
+      "real_face": "Yes",
+      "release_clause_eur": "",
+      "player_tags": "#Speedster, #Dribbler, #Distance Shooter, #Acrobat",
+      "team_position": "SUB",
+      "team_jersey_number": 10.0,
+      "loaned_from": "",
+      "joined": "2009-08-28",
+      "contract_valid_until": 2017.0,
+      "nation_position": "RW",
+      "nation_jersey_number": 11.0,
+      "pace": 92.0,
+      "shooting": 86.0,
+      "passing": 82.0,
+      "dribbling": 92.0,
+      "defending": 32.0,
+      "physic": 64.0,
+      "gk_diving": "",
+      "gk_handling": "",
+      "gk_kicking": "",
+      "gk_reflexes": "",
+      "gk_speed": "",
+      "gk_positioning": "",
+      "player_traits": "Diver, Injury Prone, Avoids Using Weaker Foot, Selfish, Long Shot Taker (AI), Speed Dribbler (AI), Chip Shot (AI)",
+      "attacking_crossing": 80,
+      "attacking_finishing": 85,
+      "attacking_heading_accuracy": 51,
+      "attacking_short_passing": 85,
+      "attacking_volleys": 86,
+      "skill_dribbling": 93,
+      "skill_curve": 86,
+      "skill_fk_accuracy": 83,
+      "skill_long_passing": 74,
+      "skill_ball_control": 90,
+      "movement_acceleration": 92,
+      "movement_sprint_speed": 92,
+      "movement_agility": 91,
+      "movement_reactions": 91,
+      "movement_balance": 91,
+      "power_shot_power": 86,
+      "power_jumping": 61,
+      "power_stamina": 76,
+      "power_strength": 65,
+      "power_long_shots": 90,
+      "mentality_aggression": 47,
+      "mentality_interceptions": 39,
+      "mentality_positioning": 89,
+      "mentality_vision": 84,
+      "mentality_penalties": 80,
+      "mentality_composure": "",
+      "defending_marking": 29,
+      "defending_standing_tackle": 26,
+      "defending_sliding_tackle": 26,
+      "goalkeeping_diving": 10,
+      "goalkeeping_handling": 8,
+      "goalkeeping_kicking": 11,
+      "goalkeeping_positioning": 5,
+      "goalkeeping_reflexes": 15,
+      "ls": "84+3",
+      "st": "84+3",
+      "rs": "84+3",
+      "lw": "89+1",
+      "lf": "88+2",
+      "cf": "88+2",
+      "rf": "88+2",
+      "rw": "89+1",
+      "lam": "88+2",
+      "cam": "88+2",
+      "ram": "88+2",
+      "lm": "87+3",
+      "lcm": "80+3",
+      "cm": "80+3",
+      "rcm": "80+3",
+      "rm": "87+3",
+      "lwb": "65+3",
+      "ldm": "60+3",
+      "cdm": "60+3",
+      "rdm": "60+3",
+      "rwb": "65+3",
+      "lb": "59+3",
+      "lcb": "47+3",
+      "cb": "47+3",
+      "rcb": "47+3",
+      "rb": "59+3"
+    }
+  ]
+}

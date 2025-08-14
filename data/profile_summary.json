@@ -1,0 +1,105 @@
+{
+  "shape": {
+    "rows": 214,
+    "columns": 8
+  },
+  "columns": [
+    {
+      "name": "invoiceno",
+      "type": "numeric_string",
+      "cardinality": "medium",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "stockcode",
+      "type": "text",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "description",
+      "type": "text",
+      "cardinality": "high",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "quantity",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        -1.0,
+        432.0
+      ]
+    },
+    {
+      "name": "invoicedate",
+      "type": "datetime",
+      "cardinality": "medium",
+      "null_percentage": 0.0
+    },
+    {
+      "name": "unitprice",
+      "type": "float",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        0.38,
+        27.5
+      ]
+    },
+    {
+      "name": "customerid",
+      "type": "integer",
+      "cardinality": "medium",
+      "null_percentage": 0.0,
+      "range": [
+        12431.0,
+        18074.0
+      ]
+    },
+    {
+      "name": "country",
+      "type": "categorical",
+      "cardinality": "low",
+      "null_percentage": 0.0,
+      "top_values": [
+        "United Kingdom",
+        "France",
+        "Australia"
+      ]
+    }
+  ],
+  "sample_rows": [
+    {
+      "invoiceno": "536365",
+      "stockcode": "85123A",
+      "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "quantity": 6,
+      "invoicedate": "12/1/2010 8:26",
+      "unitprice": 2.55,
+      "customerid": 17850,
+      "country": "United Kingdom"
+    },
+    {
+      "invoiceno": "536365",
+      "stockcode": "71053",
+      "description": "WHITE METAL LANTERN",
+      "quantity": 6,
+      "invoicedate": "12/1/2010 8:26",
+      "unitprice": 3.39,
+      "customerid": 17850,
+      "country": "United Kingdom"
+    },
+    {
+      "invoiceno": "536365",
+      "stockcode": "84406B",
+      "description": "CREAM CUPID HEARTS COAT HANGER",
+      "quantity": 8,
+      "invoicedate": "12/1/2010 8:26",
+      "unitprice": 2.75,
+      "customerid": 17850,
+      "country": "United Kingdom"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "domain": "e-commerce",
+  "kpis": [
+    {
+      "name": "Total Revenue",
+      "description": "Sum of sales across all transactions",
+      "formula": "SUM(quantity * unitprice)",
+      "importance": 4
+    },
+    {
+      "name": "Average Order Value",
+      "description": "Average revenue per transaction",
+      "formula": "SUM(quantity * unitprice) / COUNT(DISTINCT invoiceno)",
+      "importance": 3
+    },
+    {
+      "name": "Total Quantity Sold",
+      "description": "Total number of items sold",
+      "formula": "SUM(quantity)",
+      "importance": 3
+    }
+  ],
+  "charts": [
+    {
+      "name": "Revenue Over Time",
+      "type": "line",
+      "x": "invoicedate",
+      "y": "SUM(quantity * unitprice)",
+      "description": "Shows total revenue trends over time"
+    },
+    {
+      "name": "Top Selling Products",
+      "type": "bar",
+      "x": "description",
+      "y": "SUM(quantity)",
+      "description": "Displays the top products by quantity sold"
+    },
+    {
+      "name": "Sales by Country",
+      "type": "pie",
+      "x": "country",
+      "y": "SUM(quantity * unitprice)",
+      "description": "Shows the distribution of sales revenue by country"
+    },
+    {
+      "name": "Quantity Sold Over Time",
+      "type": "line",
+      "x": "invoicedate",
+      "y": "SUM(quantity)",
+      "description": "Tracks the total quantity of items sold over time"
+    },
+    {
+      "name": "Average Order Value Over Time",
+      "type": "line",
+      "x": "invoicedate",
+      "y": "SUM(quantity * unitprice) / COUNT(DISTINCT invoiceno)",
+      "description": "Shows the trend of average order value over time"
+    }
+  ],
+  "filters": [
+    {
+      "name": "Date Range",
+      "column": "invoicedate",
+      "type": "datetime"
+    },
+    {
+      "name": "Country",
+      "column": "country",
+      "type": "categorical"
+    }
+  ]
+}

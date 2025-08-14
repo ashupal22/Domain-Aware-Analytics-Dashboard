@@ -1,0 +1,77 @@
+{
+  "domain": "e-commerce",
+  "kpis": [
+    {
+      "name": "Total Revenue",
+      "description": "Overall sales revenue from all transactions",
+      "formula": "SUM(quantity * unitprice)",
+      "importance": 4
+    },
+    {
+      "name": "Average Order Value",
+      "description": "Average revenue per invoice",
+      "formula": "SUM(quantity * unitprice) / COUNT(DISTINCT invoiceno)",
+      "importance": 3
+    },
+    {
+      "name": "Unique Customers",
+      "description": "Number of distinct customers making purchases",
+      "formula": "COUNT(DISTINCT customerid)",
+      "importance": 3
+    }
+  ],
+  "charts": [
+    {
+      "name": "Revenue Over Time",
+      "type": "line",
+      "x": "invoicedate",
+      "y": "quantity * unitprice",
+      "description": "Track revenue trends across time"
+    },
+    {
+      "name": "Top Products by Revenue",
+      "type": "bar",
+      "x": "description",
+      "y": "quantity * unitprice",
+      "description": "Identify best-performing products"
+    },
+    {
+      "name": "Sales by Country",
+      "type": "bar",
+      "x": "country",
+      "y": "quantity * unitprice",
+      "description": "Breakdown of revenue by region"
+    },
+    {
+      "name": "Quantity Distribution",
+      "type": "histogram",
+      "x": "quantity",
+      "description": "Distribution of quantities sold per transaction"
+    },
+    {
+      "name": "Customer Purchase Frequency",
+      "type": "bar",
+      "x": "customerid",
+      "y": "invoiceno",
+      "description": "Highlight customers with frequent orders"
+    },
+    {
+      "name": "Unit Price Distribution",
+      "type": "histogram",
+      "x": "unitprice",
+      "description": "Understand pricing patterns of items sold"
+    }
+  ],
+  "filters": [
+    {
+      "name": "Date Range",
+      "column": "invoicedate",
+      "type": "datetime"
+    },
+    {
+      "name": "Country",
+      "column": "country",
+      "type": "categorical"
+    }
+  ]
+}

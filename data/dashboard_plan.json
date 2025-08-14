@@ -1,0 +1,85 @@
+{
+  "domain": "e-commerce",
+  "kpis": [
+    {
+      "name": "Total Revenue",
+      "description": "Sum of sales across all transactions",
+      "formula": "SUM(quantity * unitprice)",
+      "importance": 10,
+      "reason": "Revenue is a critical measure of sales performance, reflecting the overall business growth and success. It is essential for understanding the financial health of the e-commerce operations."
+    },
+    {
+      "name": "Average Order Value",
+      "description": "Average revenue per transaction",
+      "formula": "SUM(quantity * unitprice) / COUNT(DISTINCT invoiceno)",
+      "importance": 8,
+      "reason": "This KPI helps in understanding customer spending behavior and is crucial for assessing the effectiveness of pricing strategies and sales promotions."
+    },
+    {
+      "name": "Customer Count",
+      "description": "Total number of unique customers",
+      "formula": "COUNT(DISTINCT customerid)",
+      "importance": 7,
+      "reason": "Tracking the number of unique customers provides insights into the customer base size and helps in evaluating customer acquisition and retention strategies."
+    }
+  ],
+  "charts": [
+    {
+      "name": "Revenue Over Time",
+      "type": "line",
+      "x": "invoicedate",
+      "y": "SUM(quantity * unitprice)",
+      "importance": 9,
+      "description": "Shows total revenue trends over time",
+      "reason": "Visualizing revenue over time helps identify trends, seasonality, and anomalies, which are crucial for strategic planning and forecasting."
+    },
+    {
+      "name": "Sales by Country",
+      "type": "bar",
+      "x": "country",
+      "y": "SUM(quantity * unitprice)",
+      "importance": 8,
+      "description": "Compares total sales across different countries",
+      "reason": "Understanding sales distribution by country is vital for market analysis and helps in tailoring marketing strategies to different regions."
+    },
+    {
+      "name": "Top Selling Products",
+      "type": "bar",
+      "x": "description",
+      "y": "SUM(quantity)",
+      "importance": 7,
+      "description": "Identifies products with the highest sales volume",
+      "reason": "Highlighting top-selling products aids in inventory management and helps focus marketing efforts on popular items."
+    },
+    {
+      "name": "Order Quantity Distribution",
+      "type": "histogram",
+      "x": "quantity",
+      "y": "COUNT(quantity)",
+      "importance": 6,
+      "description": "Shows the distribution of order quantities",
+      "reason": "Analyzing order quantity distribution helps in understanding purchasing patterns and can inform inventory and supply chain decisions."
+    },
+    {
+      "name": "Customer Distribution by Country",
+      "type": "pie",
+      "x": "country",
+      "y": "COUNT(DISTINCT customerid)",
+      "importance": 5,
+      "description": "Displays the proportion of customers from each country",
+      "reason": "This chart provides insights into the geographical distribution of the customer base, which is useful for targeted marketing and expansion strategies."
+    }
+  ],
+  "filters": [
+    {
+      "name": "Date Range",
+      "column": "invoicedate",
+      "type": "datetime"
+    },
+    {
+      "name": "Country",
+      "column": "country",
+      "type": "categorical"
+    }
+  ]
+}

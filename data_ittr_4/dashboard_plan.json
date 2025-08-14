@@ -1,0 +1,90 @@
+{
+  "domain": "sports",
+  "kpis": [
+    {
+      "name": "Average Player Value",
+      "description": "Average market value of players in euros.",
+      "formula": "AVG(value_eur)",
+      "importance": 9,
+      "reason": "Understanding the average player value helps in assessing the overall market worth of the team or league, which is crucial for financial planning and player acquisition strategies."
+    },
+    {
+      "name": "Top Player Potential",
+      "description": "Highest potential rating among all players.",
+      "formula": "MAX(potential)",
+      "importance": 8,
+      "reason": "Identifying players with the highest potential is essential for talent development and long-term team success, as it highlights future stars who can significantly impact performance."
+    },
+    {
+      "name": "Average Player Wage",
+      "description": "Average wage of players in euros.",
+      "formula": "AVG(wage_eur)",
+      "importance": 7,
+      "reason": "Monitoring average player wages is important for budget management and ensuring competitive compensation structures within the team or league."
+    }
+  ],
+  "charts": [
+    {
+      "name": "Player Value Distribution",
+      "type": "histogram",
+      "x": "value_eur",
+      "y": "count",
+      "importance": 9,
+      "description": "Distribution of player market values.",
+      "reason": "This chart helps visualize the spread and concentration of player values, providing insights into market trends and identifying outliers or undervalued players."
+    },
+    {
+      "name": "Player Age vs. Value",
+      "type": "scatter",
+      "x": "age",
+      "y": "value_eur",
+      "importance": 8,
+      "description": "Relationship between player age and market value.",
+      "reason": "Analyzing the correlation between age and value can reveal trends in player valuation, helping in strategic decisions regarding player contracts and transfers."
+    },
+    {
+      "name": "Top 10 Players by Overall Rating",
+      "type": "bar",
+      "x": "short_name",
+      "y": "overall",
+      "importance": 8,
+      "description": "Top 10 players based on overall rating.",
+      "reason": "Highlighting the top players by overall rating showcases the key performers, aiding in team selection and marketing strategies."
+    },
+    {
+      "name": "Player Nationality Distribution",
+      "type": "pie",
+      "x": "nationality",
+      "y": "count",
+      "importance": 7,
+      "description": "Proportion of players by nationality.",
+      "reason": "Understanding the diversity of player nationalities can inform recruitment strategies and enhance team dynamics by promoting cultural diversity."
+    },
+    {
+      "name": "Player Position vs. Average Wage",
+      "type": "bar",
+      "x": "player_positions",
+      "y": "AVG(wage_eur)",
+      "importance": 7,
+      "description": "Average wage by player position.",
+      "reason": "This chart provides insights into wage distribution across different positions, helping in salary negotiations and budget allocation for various roles."
+    }
+  ],
+  "filters": [
+    {
+      "name": "Date Range",
+      "column": "dob",
+      "type": "datetime"
+    },
+    {
+      "name": "Nationality",
+      "column": "nationality",
+      "type": "categorical"
+    },
+    {
+      "name": "Club Name",
+      "column": "club_name",
+      "type": "categorical"
+    }
+  ]
+}
