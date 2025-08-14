@@ -13,14 +13,14 @@
       "description": "Average revenue per transaction",
       "formula": "SUM(quantity * unitprice) / COUNT(DISTINCT invoiceno)",
       "importance": 8,
-      "reason": "This KPI helps in understanding customer spending behavior and is crucial for assessing the effectiveness of pricing strategies and sales promotions."
+      "reason": "This KPI helps in understanding customer spending behavior and is crucial for assessing the effectiveness of pricing strategies and promotions."
     },
     {
       "name": "Customer Count",
       "description": "Total number of unique customers",
       "formula": "COUNT(DISTINCT customerid)",
       "importance": 7,
-      "reason": "Tracking the number of unique customers provides insights into the customer base size and helps in evaluating customer acquisition and retention strategies."
+      "reason": "Tracking the number of unique customers provides insights into the customer base size and growth, which is vital for customer relationship management and marketing strategies."
     }
   ],
   "charts": [
@@ -31,25 +31,25 @@
       "y": "SUM(quantity * unitprice)",
       "importance": 9,
       "description": "Shows total revenue trends over time",
-      "reason": "Visualizing revenue over time helps identify trends, seasonality, and anomalies, which are crucial for strategic planning and forecasting."
-    },
-    {
-      "name": "Sales by Country",
-      "type": "bar",
-      "x": "country",
-      "y": "SUM(quantity * unitprice)",
-      "importance": 8,
-      "description": "Compares total sales across different countries",
-      "reason": "Understanding sales distribution by country is vital for market analysis and helps in tailoring marketing strategies to different regions."
+      "reason": "Visualizing revenue over time helps identify trends, seasonality, and anomalies, aiding in strategic planning and performance evaluation."
     },
     {
       "name": "Top Selling Products",
       "type": "bar",
       "x": "description",
       "y": "SUM(quantity)",
+      "importance": 8,
+      "description": "Displays the most sold products by quantity",
+      "reason": "Identifying top-selling products is crucial for inventory management, marketing focus, and understanding customer preferences."
+    },
+    {
+      "name": "Sales by Country",
+      "type": "pie",
+      "x": "country",
+      "y": "SUM(quantity * unitprice)",
       "importance": 7,
-      "description": "Identifies products with the highest sales volume",
-      "reason": "Highlighting top-selling products aids in inventory management and helps focus marketing efforts on popular items."
+      "description": "Distribution of sales revenue by country",
+      "reason": "Understanding sales distribution by country helps in tailoring marketing strategies and identifying potential markets for expansion."
     },
     {
       "name": "Order Quantity Distribution",
@@ -57,17 +57,17 @@
       "x": "quantity",
       "y": "COUNT(quantity)",
       "importance": 6,
-      "description": "Shows the distribution of order quantities",
-      "reason": "Analyzing order quantity distribution helps in understanding purchasing patterns and can inform inventory and supply chain decisions."
+      "description": "Distribution of order quantities",
+      "reason": "Analyzing order quantity distribution helps in understanding purchasing patterns and optimizing inventory levels."
     },
     {
-      "name": "Customer Distribution by Country",
-      "type": "pie",
-      "x": "country",
-      "y": "COUNT(DISTINCT customerid)",
+      "name": "Customer Purchase Frequency",
+      "type": "bar",
+      "x": "customerid",
+      "y": "COUNT(invoiceno)",
       "importance": 5,
-      "description": "Displays the proportion of customers from each country",
-      "reason": "This chart provides insights into the geographical distribution of the customer base, which is useful for targeted marketing and expansion strategies."
+      "description": "Number of purchases per customer",
+      "reason": "This chart provides insights into customer loyalty and engagement, which are key for retention strategies and personalized marketing."
     }
   ],
   "filters": [

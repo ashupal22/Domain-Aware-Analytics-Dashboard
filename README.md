@@ -35,7 +35,7 @@ Transform any CSV file into an intelligent, interactive dashboard using **LLM-po
 ## 1. Clone and Setup Environment
 
 git clone <your-repo>
-cd analytics-dashboard
+cd pro
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -63,9 +63,9 @@ cp your-dataset.csv data/data.csv
 ## 4. Run the Pipeline
 
 python main.py
-# Domain-Aware-Analytics-Dashboard
-# Domain-Aware-Analytics-Dashboard
-# Domain-Aware-Analytics-Dashboard
-# Domain-Aware-Analytics-Dashboard
-# Domain-Aware-Analytics-Dashboard
-# Domain-Aware-Analytics-Dashboard
+
+
+## UI SCREEENSHOT
+
+
+![alt text](sample_result/1.png) ![alt text](sample_result/2.png) ![alt text](sample_result/3.png) [alt text](README.md)
