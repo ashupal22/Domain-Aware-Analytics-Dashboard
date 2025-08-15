@@ -410,8 +410,8 @@ with st.sidebar:
 
 # ---------- Search and Quick Actions ----------
 col1, col2, col3 = st.columns([3, 2, 1])
-# with col1:
-#     search_query = st.text_input("🔍 Search dashboard", placeholder="Search metrics, charts, or data...")
+with col3:
+    search_query = st.text_input("🔍 Search dashboard", placeholder="Search metrics, charts, or data...")
 # with col2:
 #     view_mode = st.selectbox("👁️ View Mode", ["Standard", "Compact", "Detailed"], index=0)
 with col1:
@@ -470,8 +470,8 @@ else:
             return 3
     
     # Filter charts based on search
-    # if search_query:
-    #     charts = [c for c in charts if search_query.lower() in c["name"].lower()]
+    if search_query:
+        charts = [c for c in charts if search_query.lower() in c["name"].lower()]
     
     # Arrange charts dynamically
     i = 0

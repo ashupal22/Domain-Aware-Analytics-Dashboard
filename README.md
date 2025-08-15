@@ -62,7 +62,7 @@ cp your-dataset.csv data/data.csv
 
 ## 4. Run the Pipeline
 
-python main.py
+python run.py
 
 
 ## UI SCREEENSHOT
