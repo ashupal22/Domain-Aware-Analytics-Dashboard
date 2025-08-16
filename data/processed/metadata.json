@@ -1,0 +1,48 @@
+{
+  "file_path": "/Users/ashupal/Documents/ecommerce_orders.csv",
+  "file_size_mb": 0.1478872299194336,
+  "encoding_used": "utf-8",
+  "delimiter": ",",
+  "original_shape": [
+    1500,
+    14
+  ],
+  "load_timestamp": "2025-08-17T01:04:25.946808",
+  "errors_found": 0,
+  "column_mapping": {
+    "order_id": "order_id",
+    "order_timestamp": "order_timestamp",
+    "customer_id": "customer_id",
+    "sku": "sku",
+    "category": "category",
+    "channel": "channel",
+    "price_usd": "price_usd",
+    "qty": "qty",
+    "discount_pct": "discount_pct",
+    "status": "status",
+    "city": "city",
+    "state": "state",
+    "country": "country",
+    "order_amount_usd": "order_amount_usd"
+  },
+  "processed_shape": [
+    1500,
+    14
+  ],
+  "dtypes": {
+    "order_id": "object",
+    "order_timestamp": "datetime64[ns]",
+    "customer_id": "object",
+    "sku": "object",
+    "category": "object",
+    "channel": "object",
+    "price_usd": "float64",
+    "qty": "int64",
+    "discount_pct": "float64",
+    "status": "object",
+    "city": "object",
+    "state": "object",
+    "country": "object",
+    "order_amount_usd": "float64"
+  }
+}

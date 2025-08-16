@@ -1,0 +1,267 @@
+{
+  "shape": {
+    "rows": 1500,
+    "columns": 14
+  },
+  "columns": [
+    {
+      "name": "order_id",
+      "type": "text",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1500,
+      "cardinality": "high"
+    },
+    {
+      "name": "order_timestamp",
+      "type": "datetime",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1500,
+      "cardinality": "high"
+    },
+    {
+      "name": "customer_id",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 475,
+      "cardinality": "high",
+      "top_values": [
+        "C0068",
+        "C0077",
+        "C0307"
+      ]
+    },
+    {
+      "name": "sku",
+      "type": "text",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1500,
+      "cardinality": "high"
+    },
+    {
+      "name": "category",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 10,
+      "cardinality": "low",
+      "top_values": [
+        "Electronics",
+        "Home",
+        "Apparel"
+      ]
+    },
+    {
+      "name": "channel",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 6,
+      "cardinality": "low",
+      "top_values": [
+        "Search",
+        "Social",
+        "Direct"
+      ]
+    },
+    {
+      "name": "price_usd",
+      "type": "float",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1418,
+      "cardinality": "high",
+      "range": [
+        7.71,
+        524.59
+      ]
+    },
+    {
+      "name": "qty",
+      "type": "integer",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 5,
+      "cardinality": "low",
+      "range": [
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "name": "discount_pct",
+      "type": "float",
+      "nulls": 185,
+      "null_pct": 12.333333333333334,
+      "unique": 42,
+      "cardinality": "medium",
+      "range": [
+        0.0,
+        0.43
+      ]
+    },
+    {
+      "name": "status",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 4,
+      "cardinality": "low",
+      "top_values": [
+        "completed",
+        "processing",
+        "returned"
+      ]
+    },
+    {
+      "name": "city",
+      "type": "categorical",
+      "nulls": 15,
+      "null_pct": 1.0,
+      "unique": 10,
+      "cardinality": "low",
+      "top_values": [
+        "Austin",
+        "Boston",
+        "Phoenix"
+      ]
+    },
+    {
+      "name": "state",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 9,
+      "cardinality": "low",
+      "top_values": [
+        "CA",
+        "TX",
+        "MA"
+      ]
+    },
+    {
+      "name": "country",
+      "type": "categorical",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1,
+      "cardinality": "low",
+      "top_values": [
+        "USA"
+      ]
+    },
+    {
+      "name": "order_amount_usd",
+      "type": "float",
+      "nulls": 0,
+      "null_pct": 0.0,
+      "unique": 1463,
+      "cardinality": "high",
+      "range": [
+        7.2,
+        2489.5
+      ]
+    }
+  ],
+  "sample_rows": [
+    {
+      "order_id": "O100915",
+      "order_timestamp": "2025-06-01 00:35:51",
+      "customer_id": "C0265",
+      "sku": "S-L6SS1A",
+      "category": "Beauty",
+      "channel": "Email",
+      "price_usd": 20.86,
+      "qty": 4,
+      "discount_pct": 0.13,
+      "status": "returned",
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "order_amount_usd": 72.59
+    },
+    {
+      "order_id": "O100256",
+      "order_timestamp": "2025-06-01 00:44:49",
+      "customer_id": "C0170",
+      "sku": "S-QRU54D",
+      "category": "Sports",
+      "channel": "Social",
+      "price_usd": 49.17,
+      "qty": 4,
+      "discount_pct": 0.28,
+      "status": "completed",
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "order_amount_usd": 141.61
+    },
+    {
+      "order_id": "O101026",
+      "order_timestamp": "2025-06-01 01:20:00",
+      "customer_id": "C0286",
+      "sku": "S-ZSB6ZW",
+      "category": "Electronics",
+      "channel": "Search",
+      "price_usd": 74.22,
+      "qty": 5,
+      "discount_pct": 0.18,
+      "status": "completed",
+      "city": "Los Angeles",
+      "state": "CA",
+      "country": "USA",
+      "order_amount_usd": 304.3
+    }
+  ],
+  "metadata": {
+    "file_path": "/Users/ashupal/Documents/ecommerce_orders.csv",
+    "file_size_mb": 0.1478872299194336,
+    "encoding_used": "utf-8",
+    "delimiter": ",",
+    "original_shape": [
+      1500,
+      14
+    ],
+    "load_timestamp": "2025-08-17T01:04:25.946808",
+    "errors_found": 0,
+    "column_mapping": {
+      "order_id": "order_id",
+      "order_timestamp": "order_timestamp",
+      "customer_id": "customer_id",
+      "sku": "sku",
+      "category": "category",
+      "channel": "channel",
+      "price_usd": "price_usd",
+      "qty": "qty",
+      "discount_pct": "discount_pct",
+      "status": "status",
+      "city": "city",
+      "state": "state",
+      "country": "country",
+      "order_amount_usd": "order_amount_usd"
+    },
+    "processed_shape": [
+      1500,
+      14
+    ],
+    "dtypes": {
+      "order_id": "object",
+      "order_timestamp": "datetime64[ns]",
+      "customer_id": "object",
+      "sku": "object",
+      "category": "object",
+      "channel": "object",
+      "price_usd": "float64",
+      "qty": "int64",
+      "discount_pct": "float64",
+      "status": "object",
+      "city": "object",
+      "state": "object",
+      "country": "object",
+      "order_amount_usd": "float64"
+    }
+  }
+}

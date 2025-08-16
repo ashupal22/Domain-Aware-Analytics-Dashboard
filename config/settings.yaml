@@ -1,0 +1,21 @@
+# Configuration file for AI Analytics Dashboard Pipeline
+
+data:
+  input_file: "data/raw/data.csv"
+  processed_file: "data/processed/data_cleaned.csv"
+  profile_file: "outputs/profile_summary.json"
+  dashboard_plan_file: "outputs/dashboard_plan.json"
+  cache_file: "outputs/dashboard_cache.json"
+
+llm:
+  provider: "openai"  # or "huggingface"
+  model_name: "gpt-4"
+  api_key: "your-api-key-here"
+  max_retries: 3
+  timeout: 30
+  cache_enabled: true
+
+app:
+  debug: false
+  cache_enabled: true
+  auto_refresh: false
